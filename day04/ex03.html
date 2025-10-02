@@ -6,7 +6,34 @@
     <title>selector example</title>
 </head>
 <body>
-    <h1>Selector Example</h1>
+    <h1>도시를 선택하세요</h1>
+    <select id="select-city">
+        <option value="1" >서울</option>
+        <option value="2">천안</option>
+        <option value="3">세종</option>
+        <option>공주</option>
+        <option>익산</option>
+        <option>정읍</option>
+        <option>광주</option>
+    </select>
+
+    <button id="btn-submit" >선택</button>
+
+    <p id="txt-result" ></p>
+
+    <script>
+        var selectCity = document.getElementById("select-city")
+        var btnSubmit = document.getElementById("btn-submit")
+        var txtResult = document.getElementById("txt-result")
+        btnSubmit.addEventListener('click',()=> {
+            console.log(selectCity.value)
+
+            txtResult.innerText = "출발역 : " + selectCity.value
+
+
+        })
+
+    </script>
     
 </body>
 </html>
