@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio button example</title>
+</head>
+<body>
+    <h1>Radio Button Example</h1>
+
+    <h2>과일</h2>
+    <div><input type="radio" name="group-1" checked value="사과" />사과</div> 
+    <div><input type="radio" name="group-1" value="바나나" />바나나</div>    
+    <div><input type="radio" name="group-1" value="오렌지" />오렌지</div>
+
+    <h2>아이브</h2>
+    <div><input type="radio" name="group-2" />장원영</div> 
+    <div><input type="radio" name="group-2" />안유진</div>    
+    <div><input type="radio" name="group-2" />이서</div>
+    <div><input type="radio" name="group-2" />레이</div>
+
+    <h2>아일릿</h2>
+    <div><input type="radio" name="group-3" />원희</div> 
+    <div><input type="radio" name="group-3" />모카</div>    
+    <div><input type="radio" name="group-3" />아로하</div>
+    <div><input type="radio" name="group-3" />민주</div>
+
+    <p id="txt-result">선택한 과일 : </p>
+
+    <button id="btn-fruite">과일 선택</button>
+
+    <script>
+        var btnFruite = document.getElementById("btn-fruite")
+        var txtResult = document.getElementById("txt-result")
+
+        btnFruite.addEventListener('click',()=> {
+            var selectObj = document.querySelector("input[name='group-1']:checked")
+            console.log(selectObj.value)
+            txtResult.innerText = selectObj.value
+
+        })
+
+    </script>
+    
+</body>
+</html>
