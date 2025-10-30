@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ex02 </title>
+</head>
+<body>
+    <textarea id="teInput" placeholder="입력해주세요" rows="10" ></textarea>
+    <button id="btnOk" > ok </button>
+    <button id="btnClear" > Clear </button>
+
+    <script>
+
+        const teInput = document.getElementById("teInput")
+        const btnOk = document.getElementById("btnOk")
+        const btnClear = document.getElementById("btnClear")
+
+        btnOk.addEventListener('click',()=> {
+            console.log(teInput.value)
+        })
+
+        btnClear.addEventListener('click',()=> {
+            teInput.value=''
+        })
+
+
+
+
+    </script>
+    
+</body>
+</html>
