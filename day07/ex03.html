@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            margin: 0px;
+            padding: 0px;
+        }
+        .box {            
+            width: 256px;
+            height: 64px;
+            background: blue;
+            color: white;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"
+    style="overflow: hidden;"
+     >
+        aaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbb cccccccccccc cccdddddddddddddddd
+    </div>
+
+    <div class="box"
+    style="overflow: auto;"
+     >
+        aaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbb cccccccccccc cccdddddddddddddddd
+    </div>
+
+    <div class="box"
+    style="word-break: break-all;
+    overflow: auto;
+    "
+     >
+        aaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbb cccccccccccc cccdddddddddddddddd
+    </div>
+    
+    
+</body>
+</html>

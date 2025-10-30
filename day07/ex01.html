@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            margin: 0px;
+            padding: 0px;
+        }
+        .box {
+            width: 256px;
+            height: 128px;
+            background: blue;
+            color: white;
+            margin: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"   > Top Left </div>
+    <div class="box" style="text-align: center;" > Top Center </div>
+    <div class="box" style="text-align: right;" > Top Right </div>
+
+    <div class="box" style="display: flex; align-items: center;" > center Left </div>
+    
+    <div class="box" style="
+        display: flex; 
+        align-items: center; 
+        justify-content: center;" > 
+    center center</div>
+
+    <div class="box" style="
+        display: flex; 
+        align-items: flex-end; 
+        justify-content: center;" > 
+    bottom center </div>
+
+    <div class="box" style="
+        display: flex; 
+        align-items: flex-end; 
+        justify-content: flex-end;" > 
+    bottom right </div>
+
+    
+</body>
+</html>
